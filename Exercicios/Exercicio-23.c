@@ -9,15 +9,19 @@
 
 int main()
 {
+    //variaveis
     float valor_nominal;
     float valor_novo = 0;
     int desconto = 9;
 
+    //solicitando informacao
     printf("Digite o valor do produto: ");
     scanf("%f", &valor_nominal);
 
+    //processando
     valor_novo = (1 - (float)desconto / 100) * valor_nominal;
 
+    //saida
     printf("\nO preço do produto com desconto de %.d %% é de %.2f reais.\n\n", desconto, valor_novo);
     return 0;
 }

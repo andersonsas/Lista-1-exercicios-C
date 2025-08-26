@@ -8,17 +8,24 @@
 
 int main()
 {
+    //Declarando valores
     float distancia_km, velocidade_kmh, velocidade_ms = 0;
     float tempo_medio = 0;
 
-    printf("Digite a distancia dos dois pontos (km) e a velocidade (km/h): ");
+    //Solicitando os valores
+    printf("\nDigite, repectivamente, a distância de dois pontos em (km) e a velocidade em (km/h).");
+    printf("\nExemplo 1 - Digitando os dois valores separadas por espaços.\n\t\t320 60 <Enter>");
+    printf("\nExemplo 2 - Digitando cada valor por vez.\n\t\t320 <Enter> 60 <Enter>\n");
     scanf("%f%f", &distancia_km, &velocidade_kmh);
 
+    //Calculando
     tempo_medio = distancia_km / velocidade_kmh;
     velocidade_ms = (velocidade_kmh * 1000) / (1 * 60 * 60);
 
-    printf("\nO tempo médio é de %.2f horas", tempo_medio);
-    printf("\nA velocidade média por metros por segundos é: %.2f\n\n", velocidade_ms);
+    //Saída
+    printf("\nNa distância de %.0f km com velocidade de %.1f km/h,", distancia_km, velocidade_kmh);
+    printf("\nO tempo médio é de %.2f horas.", tempo_medio);
+    printf("\nA velocidade média em metros por segundos é de %.2f m/s.\n\n", velocidade_ms);
 
     return 0;
 }
