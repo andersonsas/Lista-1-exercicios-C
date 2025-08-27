@@ -13,12 +13,14 @@ int main()
     float comprimento, largura, profundidade;
     float volume = 0, preco = 0, preco_cubico = 45;
 
+    // Entrada de dados
     printf("\vInforme, na seguinte ordem,\n o comprimeiro, largura e a profundidade da piscina: ");
     scanf("%f%f%f", &comprimento, &largura, &profundidade);
 
     volume = comprimento * largura * profundidade;
     preco = volume * preco_cubico;
 
+    // Saída
     printf("O preço da piscina sairá de %.2f reais\n\n", preco);
     return 0;
 }

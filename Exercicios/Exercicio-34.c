@@ -6,6 +6,7 @@
 #include <stdio.h>
 int main()
 {
+    // variaveis
     int peso;
     float altura, iMassa = 0;
 
@@ -18,9 +19,8 @@ int main()
     // calculando
     iMassa = peso / altura * altura;
 
-    //saida
+    // saida
     printf("\n O índice de massa corporea é %.2f", iMassa);
 
-    /* code */
     return 0;
 }

@@ -17,12 +17,13 @@ int main()
     printf("Insira um numero: ");
     scanf("%d", &n1);
 
-    
+    //Calculando
     qR = sqrt(n1); //calcula a raiz quadrada
     q2 = pow(n1, 2); //calcula o quadrado
 
-    printf("\nA raiz quadrado é: %f", qR);
-    printf("\nO quadrado é: %f", q2);
+    //Saída
+    printf("\nA raiz quadrado é: %.2f", qR);
+    printf("\nO quadrado é: %.2f", q2);
     
     return 0;
 }

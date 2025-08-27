@@ -8,15 +8,21 @@
 
 int main()
 {
-    //Criando variaveis.
-    int num, resultado = 1;
+    // Criando variaveis.
+    float num, num2;
+    float resultado = 1;
 
-    printf("Insira um numero: ");
-    scanf("%d", &num);
+    // Entrada de dados
+    printf("Insira o primeiro numero: ");
+    scanf("%f", &num);
+    printf("Insira o segundo numero: ");
+    scanf("%f", &num2);
 
-    resultado = pow(num, num);
+    //Calculando
+    resultado = pow(num, num2);
 
-    printf("Resultado do numero que se auto elevou: %d", resultado);
+    //Saída
+    printf("Resultado do numero que se auto elevou: %.2f", resultado);
 
     return 0;
 }

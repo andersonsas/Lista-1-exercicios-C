@@ -7,18 +7,20 @@
 
 int main()
 {
+    // criando variaveis
     int A = 1, B = 2, C = 3;
     int temp = 0;
 
+    // entrando com informações
     printf("\vDigite 3 valores: \n");
     scanf("%d%d%d", &A, &B, &C);
 
     printf("A = %d, B = %d, C = %d", A, B, C);
-    temp = A;
+    temp = A; // Processando
     A = B;
     B = C;
-    C = temp;
-    printf("\nA = %d, B = %d, C = %d", A, B, C);
+    C = temp; // Processando
+    printf("\nA = %d, B = %d, C = %d", A, B, C); // saída
 
     return 0;
 }

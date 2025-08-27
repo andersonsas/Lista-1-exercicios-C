@@ -9,14 +9,18 @@ int main()
 {
     // Variáveis.
     float comprimento, largura, area = 0;
+
     // Solicitando as medidas do terreno.
-    printf("\vDigite o comprimeiro: ");
+    printf("Quer saber a área do lote do terreno?");
+    printf("\vDigite o comprimento: ");
     scanf("%f", &comprimento);
 
     printf("Digite a largura: ");
     scanf("%f", &largura);
+
     // calculando área
     area = comprimento * largura;
+
     // Saída
     printf("\nA area do terro é de %.2f\n\n", area);
     return 0;

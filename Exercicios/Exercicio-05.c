@@ -12,7 +12,7 @@ int main()
     int p1,p2;
     
     //Solicitação das notas e pesos
-    printf("Do Aluno insira:\n");
+    printf("Insira a nota e peso da prova do aluno. \n");
     printf("A primeira nota: ");
     scanf("%f", &n1);
 
@@ -29,7 +29,7 @@ int main()
     mediap = (float) (n1*p1 + n2*p2) / (p1 + p2);
 
     //Exibindo o resultado:
-    printf("A media ponderada do aluno é: %f", mediap);        
+    printf("A media ponderada do aluno é: %.1f", mediap);        
 
     return 0;
 }

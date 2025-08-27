@@ -6,13 +6,16 @@
 
 int main()
 {
+    // Variaveis
     int v1, v2, v3;
     int soma;
     float media;
     int resto1, resto2, resto3;
 
+    // Entrada de dados
     printf("Digite tres valores inteiros separados por espaco: ");
     scanf("%d %d %d", &v1, &v2, &v3);
+
     // Calculando
     soma = v1 + v2 + v3;
     media = soma / 3.0;
@@ -20,6 +23,7 @@ int main()
     resto1 = soma % v1;
     resto2 = soma % v2;
     resto3 = soma % v3;
+    
     // Saída
     printf("\nMedia: %.2f\n", media);
     printf("Somatorio: %d\n\n", soma);

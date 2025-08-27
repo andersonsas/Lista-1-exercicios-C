@@ -11,6 +11,7 @@ int main()
     float diag, area = 0; // Definindo variáveis.
     float lado;
 
+    // Entrada de dados
     printf("\vInsira um valor da diagonal do quadrado: ");
     scanf("%f", &diag);
 
