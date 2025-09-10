@@ -18,7 +18,7 @@ int main()
     while (binario > 0)
     {
         // variavel auxiliar
-        int ultimoDigito = binario % 10;
+        int ultimoDigito = binario % 10; // obtendo o ultimo digito
         // verificando valores permitidos
         if (ultimoDigito != 0 && ultimoDigito != 1)
         {
@@ -26,8 +26,8 @@ int main()
             return -1;
         }
 
-        decimal += ultimoDigito * base; // calcula o valor significativo atual
-        base *= 2; // avança para o proximo valor significativo
+        decimal += ultimoDigito * base; // calcula o valor com a base corrente.
+        base *= 2; // definando a proxima base
         binario /= 10; // elimina o ultimo digito
     }
 
