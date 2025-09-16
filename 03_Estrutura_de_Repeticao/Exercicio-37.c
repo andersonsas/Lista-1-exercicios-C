@@ -10,8 +10,9 @@ int main()
     int a = 100, b = 200;
 
     // processa e exibe
-    for (a; a <= b; a++) {
-        printf("%d ", a);
+    for (a; a <= b; a++) { //de 100 a 200
+        if (a % 2 == 1) // se for ímpar
+            printf("%d ", a); // imprime
     }
 
     return 0;
